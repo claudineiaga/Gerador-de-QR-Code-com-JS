@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>QR Code</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js'></script>
+</head>
+<body>
+    <div class="wrapper">
+        <input type="text" id="entradaDados" placeholder="Digite Algo" />
+        <div class="opcoes">
+            Dimensões:</br>
+            <select class="tamanhoOpcoes">
+                <option value="100" selected>100x100</option>
+                <option value="150">150x150</option>
+                <option value="200">200x200</option>
+            </select>
+            </br>
+            <label>Cor do Fundo: </label>
+            <input type="color" id="BGColor" class="color-inp" /> </br>
+            <label>Cor das Linhas: </label>
+            <input type="color" id="FGColor" class="color-inp" />
+        </div>
+        <div class="box">
+            <button id="submit" disabled>Gerar</button>
+            <a href="#" id="download">Download</a>
+        </div>
+        <div class="container"></div>
+    </div>
+    <script src='main.js'></script>
+</body>
+</html>

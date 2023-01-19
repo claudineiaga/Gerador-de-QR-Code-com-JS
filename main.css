@@ -1,0 +1,120 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: "Poppins", sans-serif;
+}
+body {
+	height: 100vh;
+	background-color: #17e08c;
+}
+.wrapper {
+	background-color: #cbe5d4;
+	padding: 3em 2em;
+	position: relative;
+	margin: 1em auto;
+	width: 95%;
+	max-width: 30.25em;
+	border-radius: 0.6em;
+	box-shadow: 0 25px 50px rgba(3, 21, 55, 0.3);
+}
+#entradaDados {
+	width: 100%;
+	border: none;
+    background: #e8f0eb;
+	border-bottom: 2px solid black;
+	padding: 0.5em 1em;
+	font-size: 1em;
+	outline: none;
+	border-radius: 10px;
+}
+.opcoes {
+	margin-top: 1em;
+	display: grid;
+    align-content: space-between;
+}
+.tamanhoOpcoes{
+    margin-right: 20px;
+}
+select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	width: 6em;
+	padding: 0.45em 0.9em;
+	font-size: 1.25em;
+	letter-spacing: 0.5px;
+	cursor: pointer;
+	background-color: #54b378;
+	border: none;
+	color: #ffffff;
+	border-radius: 5px;
+	outline: none;
+}
+select::-ms-expand {
+	display: none;
+}
+select option {
+	background-color: #ffffff;
+	color: #54b378;
+	letter-spacing: 0.06em;
+	font-weight: 400;
+	font-size: 1.12em;
+}
+.selected {
+	display: none;
+}
+.color-inp {
+	appearance: none;
+	background-color: transparent;
+	width: 4em;
+	height: 3.43em;
+	border: none;
+    cursor: pointer;
+}
+.color-inp::-webkit-color-swatch {
+	border-radius: 0.3125em;
+	border: 0.18em solid #191f3f;
+}
+.color-inp::-moz-color-swatch {
+	border-radius: 5px;
+	border: 0.18em solid #191f3f;
+}
+.box {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	gap: 1em;
+}
+.box button,
+.box a {
+	font-size: 1em;
+	padding: 0.8em 1em;
+	border-radius: 0.5em;
+}
+.box button:disabled {
+	background-color: transparent;
+	color: #a3aab6;
+	border: 0.18em solid #a3aab6;
+}
+.box button {
+	background-color: transparent;
+	color: #54b378;
+    font-weight: bold;
+	border: 0.18em solid #54b378;
+}
+.box a {
+	background-color: #54b378;
+	color: #ffffff;
+	border: 0.18em solid #54b378;
+	text-decoration: none;
+}
+.container {
+	display: flex;
+	justify-content: center;
+	margin-top: 3em;
+}
+.hide {
+	display: none;
+}
+
